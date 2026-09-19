@@ -3,6 +3,9 @@ Unit tests for CSS root cause classification and drop-in remediation.
 """
 
 import unittest
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from overflow_trace.inspector import classify_css_fix
 
 

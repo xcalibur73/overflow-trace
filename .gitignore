@@ -7,6 +7,7 @@ env/
 venv/
 *.json
 !audit.json
-*.md
-!README.md
-!BENCHMARKS.md
+dist/
+build/
+*.egg-info/
+.pytest_cache/

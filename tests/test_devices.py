@@ -3,6 +3,9 @@ Unit tests for device presets and viewport resolution.
 """
 
 import unittest
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from overflow_trace.devices import resolve_device, DEVICE_PRESETS
 
 

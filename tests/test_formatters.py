@@ -4,6 +4,9 @@ Unit tests for report formatters.
 
 import json
 import unittest
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from overflow_trace.formatters import format_cli, format_markdown, format_json
 
 

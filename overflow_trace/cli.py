@@ -14,6 +14,7 @@ from overflow_trace.formatters import format_cli, format_markdown, format_json
 
 
 def create_parser() -> argparse.ArgumentParser:
+    from overflow_trace import __version__
     parser = argparse.ArgumentParser(
         prog="overflow-trace",
         description="Headless Chromium Mobile Viewport Horizontal Overflow & Breakage Tracer",
@@ -34,7 +35,12 @@ Examples:
         """
     )
 
-    parser.add_argument("url", help="Target URL to inspect for mobile horizontal overflow")
+    parser.add_argument("url", nargs="?", help="Target URL to inspect for mobile horizontal overflow")
+    parser.add_argument(
+        "--version",
+        action="version",
+        version=f"OverflowTrace v{__version__}"
+    )
     parser.add_argument(
         "--device",
         choices=list(DEVICE_PRESETS.keys()),
@@ -78,6 +84,10 @@ Examples:
 def main(args: Optional[List[str]] = None) -> int:
     parser = create_parser()
     parsed = parser.parse_args(args)
+
+    if not parsed.url:
+        parser.print_help()
+        return 0
 
     # Resolve device configuration
     device_selector = parsed.viewport if parsed.viewport else parsed.device
