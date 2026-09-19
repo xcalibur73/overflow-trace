@@ -4,6 +4,8 @@ Supporting web-performance & viewport geometry diagnostic tool. Traces mobile ho
 
 Part of the [WebAudits.pro](https://webaudits.pro) technical intelligence ecosystem.
 
+![Terminal Verification](assets/terminal_preview.png)
+
 ---
 
 ## Quickstart
