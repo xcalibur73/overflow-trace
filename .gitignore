@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.json
+!audit.json
+*.md
+!README.md
+!BENCHMARKS.md
