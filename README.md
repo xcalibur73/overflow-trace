@@ -1,8 +1,8 @@
 # OverflowTrace
 
-Mobile viewport horizontal overflow and layout breakage tracer.
+Supporting web-performance & viewport geometry diagnostic tool. Traces mobile horizontal viewport overflow and layout spill.
 
-Part of the [WebAudits.pro](https://webaudits.pro) technical intelligence platform.
+Part of the [WebAudits.pro](https://webaudits.pro) technical intelligence ecosystem.
 
 ---
 
