@@ -1,6 +1,6 @@
-# OverflowTrace: Empirical Mobile Viewport Benchmarks & Case Studies
+# OverflowTrace: Mobile Viewport Benchmarks & Case Studies
 
-Empirical evaluation of mobile horizontal overflow, viewport spills, and responsive breakages gathered while beta testing on random sites.
+Evaluation of mobile horizontal overflow, viewport spills, and responsive breakages gathered during testing.
 
 ---
 
@@ -13,14 +13,14 @@ Audits were conducted using OverflowTrace v1.0.0 via native Chromium Chrome DevT
 4. Offending DOM node count, exact bounding client rect coordinates (`rect.left`, `rect.right`, `rect.width`), and CSS selector paths.
 5. Primary CSS root cause classification and synthesized drop-in remediation recipes.
 
-Testing environments evaluated while beta testing on random sites:
+Testing environments evaluated:
 - Apple iPhone SE: 375 x 667 px @ 2.0x DPR
 - Apple iPhone 14/15: 390 x 844 px @ 3.0x DPR
 - Compact Mobile Device: 320 x 568 px @ 2.0x DPR
 
 ---
 
-## Empirical Benchmark Results Matrix
+## Benchmark Results Matrix
 
 | Target Property / Architecture | Emulated Device | Viewport Width | ScrollWidth | Overflow (px) | Offending Nodes | Verdict | Primary Triggered Root Cause |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|:---|
