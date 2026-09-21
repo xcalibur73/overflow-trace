@@ -102,6 +102,8 @@ async def inspect_url_viewport(
         "--no-sandbox",
         "--disable-extensions",
         "--disable-software-rasterizer",
+        "--disable-blink-features=AutomationControlled",
+        "--disable-features=IsolateOrigins,site-per-process",
         "about:blank"
     ]
 
