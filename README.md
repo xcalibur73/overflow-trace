@@ -5,8 +5,9 @@
 
 
 Supporting web-performance & viewport geometry diagnostic tool. Traces mobile horizontal viewport overflow and layout spill.
-
 Part of the [WebAudits.pro](https://webaudits.pro) technical intelligence ecosystem.
+
+> **Interactive Web Tool**: Run live mobile viewport overflow and layout breakage audits directly in your browser at [webaudits.pro/tools/overflow-trace](https://webaudits.pro/tools/overflow-trace).
 
 ![Terminal Verification](assets/terminal_preview.png)
 

@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Fixed false positive in media asset root cause classification: exempted media elements with fluid `width: 100%` from being incorrectly flagged as lacking `max-width: 100%`.
 
+### Added
+- Linked documentation and quickstart instructions to the interactive web tool on [webaudits.pro/tools/overflow-trace](https://webaudits.pro/tools/overflow-trace).
+
 ## [1.0.1] - 2026-09-21
 
 ### Added
