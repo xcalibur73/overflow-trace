@@ -47,5 +47,10 @@ class TestRemediation(unittest.TestCase):
         self.assertIn("margin-left: 0", res["suggested_fix"])
 
 
+    def test_media_with_fluid_width_not_flagged_for_missing_max_width(self):
+        res = classify_css_fix("img", {"width": "100%", "max-width": "none"})
+        self.assertFalse(any("Media asset lacking max-width" in c for c in res["causes"]))
+
+
 if __name__ == "__main__":
     unittest.main()

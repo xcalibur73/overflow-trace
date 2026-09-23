@@ -69,7 +69,7 @@ OVERFLOW_EVALUATION_SCRIPT = """
                 rootCauses.push('Table markup exceeding mobile column width');
             }
             if (tag === 'img' || tag === 'svg' || tag === 'video' || tag === 'iframe') {
-                if (!style.maxWidth || style.maxWidth === 'none') {
+                if ((!style.maxWidth || style.maxWidth === 'none') && style.width !== '100%') {
                     rootCauses.push('Media asset lacking max-width: 100%');
                 }
             }
@@ -162,7 +162,7 @@ def classify_css_fix(tag: str, styles: Dict[str, str], spill_direction: str = "R
     elif tag == "table":
         causes.append("Table markup exceeding mobile column width")
         fix = "display: block; overflow-x: auto; max-width: 100%;"
-    elif tag in ("img", "video", "iframe") and (not max_width or max_width == "none"):
+    elif tag in ("img", "video", "iframe") and (not max_width or max_width == "none") and width != "100%":
         causes.append("Media asset lacking max-width: 100%")
         fix = "max-width: 100%; height: auto;"
     elif white_space == "nowrap":

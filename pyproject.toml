@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "overflow-trace"
-version = "1.0.0"
+version = "1.0.2"
 description = "Mobile viewport horizontal overflow and layout breakage tracer via Chromium CDP"
 readme = "README.md"
 authors = [
